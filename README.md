@@ -13,9 +13,7 @@
   **Logout:** As a user I can logout from the platform so no one else can use it 
 
 
-  **List monthly tasks** As a user I can see my monthly tasks 
-
-  **List daily tasks** As a user I can see my dairy tasks
+  **List tasks** As a user I can see my monthly/daily tasks 
 
   **Add a task** As a user I can add a task, with an expiration date, description and upload files
   
@@ -47,8 +45,7 @@
  - / - Homepage
   - /auth/signup - Signup form
   - /auth/login - Login form
-  - /list-month-task - monthly task
-  - /list-daily-task - daily task
+  - /list-task - tasks
   - /tasks/:id - tasks detail
   
 
@@ -82,7 +79,7 @@
 
 ## Components
 
-- 7 pages
+- 6 pages
 - Navbar component
 - Task list component
 - Task Card component
@@ -130,8 +127,7 @@
   - POST /auth/login - Login form  ==> body(email, password)
   - POST /auth/logout -  
 
-  - GET /list-month-taks -
-  - GET /list-daily-taks - daily task list 
+  - GET /list-tasks
   - GET /tasks/:id - task detail
   - POST /create-task - task form ==> (body data)
   - DELETE /delete-task - ==>(Body task id)
