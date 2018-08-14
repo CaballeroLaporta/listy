@@ -1,4 +1,4 @@
-# Listy
+ Listy
 
 - A to do app for daily tasks
 
@@ -16,6 +16,8 @@
   **List tasks** As a user I can see my monthly/daily tasks 
 
   **Add a task** As a user I can add a task, with an expiration date, description and upload files
+
+   **task detail** As a user I can see the detail of a task
   
   **modify a tasks** As a user I can modify a task 
 
@@ -132,5 +134,12 @@
   - POST /create-task - task form ==> (body data)
   - DELETE /delete-task - ==>(Body task id)
   - PUT /modify-task ==>(Body task id)
+
+## links
+
+- https://trello.com/b/jKnPjzOu/listy
+- https://github.com/CaballeroLaporta/listy (frontend)
+- https://github.com/CaballeroLaporta/listy-backend (backend)
+
 
 
