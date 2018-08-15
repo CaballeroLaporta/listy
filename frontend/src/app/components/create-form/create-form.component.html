@@ -1,0 +1,32 @@
+
+<div class = "form"> 
+
+    <div>
+      <h2>Create a task</h2>
+    </div>
+  
+    <form class =" form-fields" (ngSubmit)="submitForm(form)" #form="ngForm">
+    
+      <div class="field margin" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
+    
+        <!-- <label>task name/label> -->
+        <div> 
+          <input class= "size" type="text" name="name" placeholder="task name" [(ngModel)]="name" #nameField="ngModel" required />
+        </div>
+    
+        <!-- <label>task description</label> -->
+        <div>
+          <input class= "size" type="description" name="desctiption" placeholder="task description" [(ngModel)]="description" #descriptionField="ngModel"  />
+        </div>
+         <!-- <label>due task</label> -->
+         <div>
+            <input class= "size" type="date" name="duedate" placeholder="due date" [(ngModel)]="duedate" #duedateField="ngModel"/>
+          </div>
+    
+      </div>
+    
+      <div class="field submit">
+        <button class= "btn" type="submit">Create task</button>
+      </div>
+    </form>
+  </div>

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Subject, Observable } from 'rxjs';
-
 import { environment } from '../../environments/environment';
 
 
@@ -10,8 +9,8 @@ export class AuthService {
 
   private user: any;
   private userChange: Subject<any> = new Subject();
-
-  private API_URL = environment.API_URL;
+  
+  private baseURL = environment.baseURL + 'api/auth';
 
   userChange$: Observable<any> = this.userChange.asObservable();
 
@@ -27,7 +26,7 @@ export class AuthService {
     const options = {
       withCredentials: true
     };
-    return this.httpClient.get(`${this.API_URL}/me`, options)
+    return this.httpClient.get(`${this.baseURL}/me`, options)
       .toPromise()
       .then((user) => this.setUser(user))
       .catch((err) => {
@@ -41,7 +40,7 @@ export class AuthService {
     const options = {
       withCredentials: true
     };
-    return this.httpClient.post(`${this.API_URL}/login`, user, options)
+    return this.httpClient.post(`${this.baseURL}/login`, user, options)
       .toPromise()
       .then((data) => this.setUser(data));
   }
@@ -50,7 +49,7 @@ export class AuthService {
     const options = {
       withCredentials: true
     };
-    return this.httpClient.post(`${this.API_URL}/signup`, user, options)
+    return this.httpClient.post(`${this.baseURL}/signup`, user, options)
       .toPromise()
       .then((data) => this.setUser(data));
   }
@@ -59,7 +58,7 @@ export class AuthService {
     const options = {
       withCredentials: true
     };
-    return this.httpClient.post(`${this.API_URL}/logout`, null, options)
+    return this.httpClient.post(`${this.baseURL}/logout`, null, options)
       .toPromise()
       .then(() => this.setUser());
   }

@@ -16,6 +16,10 @@ import { InitAuthGuard } from './guards/init-auth.guard';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './components/signup/signup.component';
+import { MytasksComponent } from './components/mytasks/mytasks.component';
+import { CreateComponent } from './pages/create/create.component';
+import { CreateFormComponent } from './components/create-form/create-form.component';
+import { MytasksPageComponent } from './pages/mytasks-page/mytasks-page.component';
 
 
 // const routes: Routes = [
@@ -29,7 +33,9 @@ import { SignupComponent } from './components/signup/signup.component';
     { path: '',  component: HomePageComponent, canActivate: [ InitAuthGuard ] },
     { path: 'login',  component: LoginPageComponent, canActivate: [ RequireAnonGuard ] },
     { path: 'signup',  component: SignupPageComponent, canActivate: [ RequireAnonGuard ] },
-    // { path: 'page',  component: ... , canActivate: [ RequireUserGuard ] },
+    { path: 'tasks',  component: MytasksPageComponent ,canActivate: [ RequireUserGuard ]},
+    //   { path: 'private',  component: PrivatePageComponent },
+    { path: 'create',  component: CreateFormComponent , canActivate: [ RequireUserGuard ] },
     // { path: '**' , redirectTo: '' }
     ]
 
@@ -40,7 +46,11 @@ import { SignupComponent } from './components/signup/signup.component';
     HomePageComponent,
     SignupPageComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    MytasksComponent,
+    CreateComponent,
+    CreateFormComponent,
+    MytasksPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,35 @@
-<form (ngSubmit)="submitForm(form)" #form="ngForm">
 
-  <div class="field" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
-    <!-- <label>username</label> -->
-    <input type="text" name="username" placeholder="username" [(ngModel)]="username" #usernameField="ngModel" required />
+<div class = "form"> 
 
-    <!-- <label>password</label> -->
-    <input type="password" name="password" placeholder="password" [(ngModel)]="password" #passwordField="ngModel" required />
-     
-    <!-- <label>email</label> -->
-     <input type="" name="email" placeholder="email" [(ngModel)]="email" #emailField="ngModel" required />
-
+  <div>
+    <h2>Create a free account</h2>
   </div>
 
-  <div class="field submit">
-    <button type="submit">Signup</button>
-  </div>
-</form>
+  <form class =" form-fields" (ngSubmit)="submitForm(form)" #form="ngForm">
+  
+    <div class="field margin" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
+  
+      <!-- <label>username</label> -->
+      <div> 
+        <input class= "size" type="text" name="username" placeholder="username" [(ngModel)]="username" #usernameField="ngModel" required />
+      </div>
+      
+      <!-- <label>password</label> -->
+      <div>
+        <input class= "size" type="password" name="password" placeholder="password" [(ngModel)]="password" #passwordField="ngModel" required />
+      </div>
+       
+      <!-- <label>email</label> -->
+      <div>
+        <input class= "size" type="email" name="email" placeholder="email" [(ngModel)]="email" #emailField="ngModel" required />
+      </div>
+  
+    </div>
+  
+    <div class="field submit">
+      <button class= "btn" type="submit">Signup</button>
+    </div>
+  </form>
+</div>
+
 
