@@ -20,6 +20,7 @@ import { MytasksComponent } from './components/mytasks/mytasks.component';
 import { CreateComponent } from './pages/create/create.component';
 import { CreateFormComponent } from './components/create-form/create-form.component';
 import { MytasksPageComponent } from './pages/mytasks-page/mytasks-page.component';
+import { ModifyTaskComponent } from './components/modify-task/modify-task.component';
 
 
 // const routes: Routes = [
@@ -36,7 +37,8 @@ import { MytasksPageComponent } from './pages/mytasks-page/mytasks-page.componen
     { path: 'tasks',  component: MytasksPageComponent ,canActivate: [ RequireUserGuard ]},
     //   { path: 'private',  component: PrivatePageComponent },
     { path: 'create',  component: CreateFormComponent , canActivate: [ RequireUserGuard ] },
-    // { path: '**' , redirectTo: '' }
+    { path: 'modifyTask',  component: CreateFormComponent , canActivate: [ RequireUserGuard ] },
+    // { path: 'create' , redirectTo: '' }
     ]
 
 @NgModule({
@@ -50,7 +52,8 @@ import { MytasksPageComponent } from './pages/mytasks-page/mytasks-page.componen
     MytasksComponent,
     CreateComponent,
     CreateFormComponent,
-    MytasksPageComponent
+    MytasksPageComponent,
+    ModifyTaskComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,11 @@
 
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
 
 .form {
   padding: 20px 0px;

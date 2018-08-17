@@ -10,6 +10,7 @@ import { MytasksListService } from '../../services/mytasks-list.service'
 export class MytasksComponent implements OnInit {
   
   tasksEntries: Array<any>;
+
   constructor(
     private mytasksListService: MytasksListService,
     private router : Router
@@ -17,10 +18,23 @@ export class MytasksComponent implements OnInit {
 
 
   ngOnInit() {
-    this.mytasksListService.getAll()
-        .then(data => this.tasksEntries = data);
-        .catch(error => {
-        })
+
+    this.mytasksListService.tasksChange$.subscribe((tasks) => {
+      this.tasksEntries = tasks
+    })
+    this.mytasksListService.getAll();
+
+
+    // this.mytasksListService.getAll()
+    //     .then(data => this.tasksEntries = data);
+    //     .catch(error => {
+    //     })
+
+  }
+
+  deleteOne(id) {
+    this.mytasksListService.deleteOne(id);
+    console.log('xxxxxxx',id)
   }
  }
   

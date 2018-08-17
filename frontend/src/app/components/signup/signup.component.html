@@ -1,31 +1,22 @@
 
-<div class = "form"> 
+<h1><a [routerLink]="['/']"> Listy</a></h1>
 
+<div class = "form"> 
   <div>
     <h2>Create a free account</h2>
   </div>
-
   <form class =" form-fields" (ngSubmit)="submitForm(form)" #form="ngForm">
-  
     <div class="field margin" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
-  
-      <!-- <label>username</label> -->
       <div> 
         <input class= "size" type="text" name="username" placeholder="username" [(ngModel)]="username" #usernameField="ngModel" required />
       </div>
-      
-      <!-- <label>password</label> -->
       <div>
         <input class= "size" type="password" name="password" placeholder="password" [(ngModel)]="password" #passwordField="ngModel" required />
       </div>
-       
-      <!-- <label>email</label> -->
       <div>
         <input class= "size" type="email" name="email" placeholder="email" [(ngModel)]="email" #emailField="ngModel" required />
       </div>
-  
     </div>
-  
     <div class="field submit">
       <button class= "btn" type="submit">Signup</button>
     </div>

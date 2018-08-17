@@ -26,8 +26,9 @@ export class CreateFormComponent implements OnInit {
         description: this.description,
         dueDate: this.duedate
     })
-    .then(()=> {
-        this.router.navigate(['/'])
+    .then(note => {
+      console.log(note)
+        //this.router.navigate(['/'])
     })
     .catch(error => {
         console.log(error)

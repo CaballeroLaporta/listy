@@ -28,7 +28,7 @@ password: string;
         password: this.password
     })
     .then(()=> {
-        this.router.navigate(['/'])
+        this.router.navigate(['/create'])
     })
     .catch(error => {
         console.log(error)

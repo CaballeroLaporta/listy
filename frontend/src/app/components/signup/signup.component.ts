@@ -28,7 +28,7 @@ export class SignupComponent implements OnInit {
           email: this.email
       })
       .then(()=> {
-          this.router.navigate(['/'])
+          this.router.navigate(['/create'])
       })
       .catch(error => {
           console.log(error)
