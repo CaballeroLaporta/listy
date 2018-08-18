@@ -1,26 +1,30 @@
 <div class = "form"> 
 
     <div>
-      <h2>Create a task</h2>
+      <h2>Edit task</h2>
+      <h2 class="name">{{task.name}}</h2>
     </div>
-  
+ 
     <form class =" form-fields" (ngSubmit)="submitForm(form)" #form="ngForm">
     
       <div class="field margin" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
         <div class="inputs">
           <div class="input-size"> 
-            <input class= "size" type="text" name="name" placeholder="task name" [(ngModel)]="name" #nameField="ngModel" required />
+            <input class= "size" type="text" name="name" placeholder="task name" [(ngModel)]="task.name" #nameField="ngModel" required />
           </div>
           <div>
-            <input class= "size" type="description" name="desctiption" placeholder="task description" [(ngModel)]="description" #descriptionField="ngModel"  />
+            <input class= "size" type="description" name="description" placeholder="task description (optional)" [(ngModel)]="task.description" #descriptionField="ngModel"  />
           </div>
           <div> 
-            <input class= "size" type="Date" name="dueDate" placeholder="due date" [(ngModel)]="dueDate" #dueDateField="ngModel"/>
+            <input class= "size" type="Date" name="dueDate" placeholder="due date (optional)" [(ngModel)]="dueDate" #dueDateField="ngModel"/>
           </div>
 
         </div>
         <div class="field submit">
-          <button class= "btn" type="submit">+</button>
+            <button class= "btn" type="submit">Edit</button>
+
         </div>
       </div>
     </form>
+
+</div>

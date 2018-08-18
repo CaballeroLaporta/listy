@@ -36,5 +36,7 @@ export class MytasksComponent implements OnInit {
     this.mytasksListService.deleteOne(id);
     console.log('xxxxxxx',id)
   }
+
+
  }
   

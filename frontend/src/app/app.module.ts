@@ -37,7 +37,7 @@ import { ModifyTaskComponent } from './components/modify-task/modify-task.compon
     { path: 'tasks',  component: MytasksPageComponent ,canActivate: [ RequireUserGuard ]},
     //   { path: 'private',  component: PrivatePageComponent },
     { path: 'create',  component: CreateFormComponent , canActivate: [ RequireUserGuard ] },
-    { path: 'modifyTask',  component: CreateFormComponent , canActivate: [ RequireUserGuard ] },
+    { path: 'task-edit/:id',  component: ModifyTaskComponent , canActivate: [ RequireUserGuard ] },
     // { path: 'create' , redirectTo: '' }
     ]
 

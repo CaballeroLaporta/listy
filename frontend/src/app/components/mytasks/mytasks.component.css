@@ -18,9 +18,15 @@ p{
   background-color: #F5F5F5;
   border: 1px solid black;
   display: flex;
+  flex-direction: column;
+}
+
+.task-content {
+  display:flex;
+  flex-direction: row;
 }
 
 .name {
-  width: 85%;
+  width: 70%;
   padding-left: 10px;
 }

@@ -3,6 +3,8 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Subject, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -34,13 +36,13 @@ export class MytasksListService {
       })
   }
 
-  // getOne(id) {
-  //   const options = {
-  //     withCredentials: true
-  //   };
-  //   return this.httpClient.get(`${this.baseURL}/${id}`)
-  //   .toPromise();
-  // }
+  getOne(id) {
+    const options = {
+      withCredentials: true
+    };
+    return this.httpClient.get(`${this.baseURL}/task-edit/${id}`,options)
+    .toPromise();
+  }
   
   creatOne(data) {
     const options = {
@@ -54,7 +56,15 @@ export class MytasksListService {
     
   }
 
-  modifyOne(id) {
+  updateOne(id,data) {
+    const options = {
+      withCredentials: true
+    };
+    return this.httpClient.put(`${this.baseURL}/create`,data, options)
+    .toPromise()
+    .then(() => {
+      this.getAll();
+    } );
 
   }
 
@@ -66,7 +76,8 @@ export class MytasksListService {
     .toPromise()
     .then(() => {
       this.getAll();
-  }
+    });
 
+  }
 
 }
