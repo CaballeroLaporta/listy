@@ -8,7 +8,7 @@
         <h2 class="name">{{task.name}}</h2>
         <a [routerLink]="['/task-edit', task._id]"><i class="fas fa-pencil-alt"></i>
         </a>
-        <button (click)="updateTask(task._id)"> <i class="fas fa-trash fa-2x"></i></button>
+        <button (click)="deleteOne(task._id)"> <i class="fas fa-trash fa-2x"></i></button>
       </div>
       <div class="flex-container">
         <h4 class="options-fields">{{task.description}}</h4>
@@ -17,4 +17,3 @@
     </div>
   </div>
 </div>
-z

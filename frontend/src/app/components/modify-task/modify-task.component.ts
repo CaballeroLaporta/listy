@@ -12,6 +12,9 @@ export class ModifyTaskComponent implements OnInit {
 
   task: any;
   taskId: any;
+  name: string;
+  description: string;
+  duedate: any;
   
 
 
@@ -31,15 +34,17 @@ export class ModifyTaskComponent implements OnInit {
           })
     }
 
-  submitForm(form) {
-    this.mytasksListService.updateOne(
-      {
-        _id: this.id,
-      {
-        name: this.name,
-        description: this.description,
-        dueDate: this.duedate
-      })
+  submitForm(form, id) {
+    console.log(id);
+    const data = {
+      name: this.task.name,
+      description: this.description,
+      dueDate: this.duedate 
+    }
+
+    console.log(id, data)
+
+    this.mytasksListService.updateOne(this.taskId, data)
       .then(note => {
         console.log(note)
         this.router.navigate(['/create'])

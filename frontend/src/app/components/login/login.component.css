@@ -1,16 +1,20 @@
 
-h1 {
+/* h1 {
   font-size: 50px;
   text-align: center;
+  
 }
-a {
+.home-link {
   text-decoration: none;
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px 10px black;
 }
 
 .form {
   padding: 20px 0px;
   width:90%;
-  background-color:#F5F5F5;
+  background-color:rgb(245, 245, 245,0.7);
   margin:70px auto;
   display:flex;
   flex-direction: column;
@@ -38,7 +42,7 @@ h2 {
 
 .size {
   border: 1px solid #F5F5F5;;
-  color:#F5F5F5;
+  color:black;
   height:40px;
   width: 260px;
   font-size: 20px;
@@ -57,4 +61,4 @@ h2 {
 
 p {
   text-align: center;
-}
+} */

@@ -60,7 +60,7 @@ export class MytasksListService {
     const options = {
       withCredentials: true
     };
-    return this.httpClient.put(`${this.baseURL}/create`,data, options)
+    return this.httpClient.put(`${this.baseURL}/${id}`,data, options)
     .toPromise()
     .then(() => {
       this.getAll();
