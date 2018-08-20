@@ -7,22 +7,17 @@
   
     <form class =" form-fields" (ngSubmit)="submitForm(form)" #form="ngForm">
     
-      <div class="field margin" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
-        <div class="inputs">
-          <div class="input-size"> 
-            <input class= "size" type="text" name="name" placeholder="task name" [(ngModel)]="name" #nameField="ngModel" required />
-          </div>
+      <div class="field-create" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
+        <input class= "size-task" type="text" name="name" placeholder="task name" [(ngModel)]="name" #nameField="ngModel" required />
+        
           <!-- <div>
             <input class= "size" type="description" name="desctiption" placeholder="task description" [(ngModel)]="description" #descriptionField="ngModel"  />
           </div> -->
-          <div> 
+          <!-- <div> 
             <input class= "size" type="Date" name="dueDate" placeholder="due date" [(ngModel)]="dueDate" #dueDateField="ngModel"/>
-          </div>
-
-        </div>
-        <div class="field submit">
-          <button class= "btn" type="submit">+</button>
-        </div>
+          </div> -->
+         
+        <button class= "btn-task" type="submit">+</button>
       </div>
     </form>
     

@@ -18,13 +18,14 @@ body {
   /* background: green; */
   margin:0px;
   padding:0px;
-  
   font-family: 'Lato', sans-serif;
+  color:white;
   background-color: rgb(255, 120, 125);
   background-image: center;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Nunito', sans-serif;
+  text-align:center;
   
 }
 
@@ -47,7 +48,6 @@ body {
 .monster {
   position: absolute;
   top: 100px;
-  
   left: 0;
   width: auto;
   height: 400px;
@@ -63,10 +63,198 @@ body {
   padding: 12px 15px;
   background-color: rgb(175, 88, 91);
   width: 70%;
-  margin: 10px;
+  margin: 5px;
   color: white;
   border-radius: 15px;
   font-size: 1.2em;
   text-decoration: none;
 }
+
+/* login component */
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.title-home-link{
+  font-size: 2em;
+  font-weight: bolder;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form {
+  text-align:center;
+}
+
+.size {
+  padding: 12px 15px;
+  width: 70%;
+  margin: 5px;
+  color: rgb(204, 85, 99);
+  border-radius: 15px;
+  font-size: 1.2em;
+}
+
+.signup-link {
+  color : rgb(175, 88, 91);
+  margin-left: 5px;
+}
+
+.monster-login {
+  position: absolute;
+  top: 400px;
+  left: -100px;
+  width: auto;
+  height: 400px;
+  z-index: -1;
+}
+
+/* signup component */
+
+
+.signup {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.monster-signup {
+  position: absolute;
+  top: -100px;
+  left: +100px;
+  width: auto;
+  height: 400px;
+  z-index: -1;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* create component */
+
+.field-create{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.size-task {
+  padding: 12px 15px;
+  width: 60%;
+  margin: 5px;
+  color: rgb(204, 85, 99);
+  border-radius: 15px;
+  font-size: 1.2em;
+}
+
+.btn-task {
+  padding: 12px 15px;
+  background-color: rgb(175, 88, 91);
+  width: 20%;
+  margin: 5px;
+  color: white;
+  border-radius: 15px;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* mytask component */
+
+.task-card {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.task-size {
+background-color:  rgb(175, 88, 91);
+text-align:left;
+border-radius: 15px;
+width: 90%;
+
+
+}
+
+.task-content {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.name {
+  width: 70%;
+  padding-left: 10px;
+  margin:0;
+  font-size: 22px;
+}
+
+.icon-edit {
+  padding-top: 7px;
+  display: inline-block;
+  color:white;
+}
+
+.icon-trash {
+  color:white;
+}
+
+.optionals-fields {
+  margin: 5px;
+  color:pink;
+  padding-left: 10px;
+}
+
+.monster-mytask {
+  position: absolute;
+  top: +200px;
+  left: -62px;
+  width: auto;
+  height: 500px;
+  z-index: -1;
+}
+
+/* modify component */
+.monster-modify{
+  position: absolute;
+  top: +450px;
+  left: -62px;
+  width: auto;
+  height: 500px;
+  z-index: -1;
+}
+
+.edit-task {
+  padding: 40px;
+}
+
+/* app component */
+
+.user {
+  background-color:  rgb(139, 71, 73);
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-profile {
+  text-decoration: none;
+  font-size:20px;
+  color: white;
+  text-transform: capitalize;
+} 
+
+
+
 

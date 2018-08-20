@@ -5,9 +5,9 @@
       <div *ngIf="loading">
         <span class="username text">loading...</span>
       </div>
-      <div class="name" *ngIf="!loading && !!user">
-        <a [routerLink]="['/profile']">Hola {{user.username}}</a>
-        <a (click)="logout()">logout</a>
+      <div class="user" *ngIf="!loading && !!user">
+        <a class = "text-profile"[routerLink]="['/profile']">Hola {{user.username}}</a>
+        <a class = "text-profile"(click)="logout()">logout</a>
       </div>
       <div *ngIf="!loading && anon">
         <!-- <a [routerLink]="['/login']">login</a>
