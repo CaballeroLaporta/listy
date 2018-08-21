@@ -26,7 +26,8 @@ body {
   background-repeat: no-repeat;
   font-family: 'Nunito', sans-serif;
   text-align:center;
-  
+  overflow-y:hidden;
+ 
 }
 
 /* Home page */
@@ -37,6 +38,7 @@ body {
   text-align: center;
   color: white;
   height: 100%;
+  overflow-y:hidden;
 }
 
 #title {
@@ -52,12 +54,14 @@ body {
   width: auto;
   height: 400px;
   z-index: -1;
+  overflow-y:hidden;
 }
 .btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y:hidden;
 }
 .btn {
   padding: 12px 15px;
@@ -68,6 +72,7 @@ body {
   border-radius: 15px;
   font-size: 1.2em;
   text-decoration: none;
+  overflow-y:hidden;
 }
 
 /* login component */
@@ -96,6 +101,7 @@ h1 {
   color: rgb(204, 85, 99);
   border-radius: 15px;
   font-size: 1.2em;
+  overflow-y:hidden;
 }
 
 .signup-link {
@@ -110,6 +116,7 @@ h1 {
   width: auto;
   height: 400px;
   z-index: -1;
+  overflow-y:hidden;
 }
 
 /* signup component */
@@ -118,6 +125,7 @@ h1 {
 .signup {
   padding-top: 200px;
   text-align: center;
+  overflow-y:hidden;
 }
 
 .monster-signup {
@@ -127,6 +135,7 @@ h1 {
   width: auto;
   height: 400px;
   z-index: -1;
+  overflow-y:hidden;
 }
 
 .flex-column {
@@ -134,13 +143,14 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y:hidden;
 }
 
 /* create component */
 
 .field-create{
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -154,18 +164,20 @@ h1 {
   color: rgb(204, 85, 99);
   border-radius: 15px;
   font-size: 1.2em;
+  overflow-y:hidden;
 }
 
 .btn-task {
-  padding: 12px 15px;
+  padding: 9px 15px;
   background-color: rgb(175, 88, 91);
   width: 20%;
+  height: 50px;
   margin: 5px;
   color: white;
   border-radius: 15px;
-  font-size: 1.2em;
+  font-size: 2em;
   text-decoration: none;
-  font-size: 30px;
+  overflow-y:hidden;
 }
 
 /* mytask component */
@@ -181,6 +193,7 @@ background-color:  rgb(175, 88, 91);
 text-align:left;
 border-radius: 15px;
 width: 90%;
+overflow-y:hidden;
 
 
 }
@@ -188,7 +201,8 @@ width: 90%;
 .task-content {
   display:flex;
   flex-direction: row;
-  justify-content: space-between
+  justify-content: space-between;
+  overflow-y:hidden;
 }
 
 .name {
@@ -221,6 +235,7 @@ width: 90%;
   width: auto;
   height: 500px;
   z-index: -1;
+  overflow-y:hidden;
 }
 
 /* modify component */
@@ -231,6 +246,7 @@ width: 90%;
   width: auto;
   height: 500px;
   z-index: -1;
+  overflow-y:hidden;
 }
 
 .edit-task {
