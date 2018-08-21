@@ -44,17 +44,22 @@ body {
 #title {
   font-size: 4em;
   font-weight: bolder;
-  margin-bottom: 300px;
+  margin-bottom: 280px;
 }
 
 .monster {
   position: absolute;
-  top: 100px;
-  left: 0;
+  top: 150px;
+  left: 1px;
   width: auto;
-  height: 400px;
+  height: 375px;
   z-index: -1;
-  overflow-y:hidden;
+  overflow-y: hidden;
+}
+
+h2 { 
+  margin:0;
+  padding-bottom: 10px;
 }
 .btns {
   display: flex;
@@ -67,9 +72,9 @@ body {
   padding: 12px 15px;
   background-color: rgb(139, 71, 73);
   width: 70%;
-  margin: 5px;
+  margin: 3px;
   color: white;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 1.2em;
   text-decoration: none;
   overflow-y:hidden;
@@ -161,7 +166,7 @@ h1 {
   padding: 12px 15px;
   width: 60%;
   margin: 5px;
-  color: rgb(139, 71, 73)
+  color: rgb(139, 71, 73);
   border-radius: 15px;
   font-size: 1.2em;
   overflow-y:hidden;
