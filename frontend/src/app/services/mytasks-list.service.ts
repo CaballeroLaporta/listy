@@ -29,7 +29,7 @@ export class MytasksListService {
     const options = {
       withCredentials: true
     };
-    return this.httpClient.get(`http://localhost:3000/api/tasks`, options)
+    return this.httpClient.get(`${this.baseURL}`, options)
       .toPromise()
       .then((tasks) => {
         this.setTasks(tasks);

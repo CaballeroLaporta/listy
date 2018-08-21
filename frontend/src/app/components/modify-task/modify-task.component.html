@@ -7,7 +7,7 @@
  {{task._id}}
     <form class =" form-fields" (ngSubmit)="submitForm(form,task._id)" #form="ngForm">
     
-      <div class="field margin" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
+      <div class="field margin">
         <div class="inputs">
           <div class="input-size"> 
             <input class= "size" type="text" name="name" placeholder="task name" [(ngModel)]="task.name" required />
