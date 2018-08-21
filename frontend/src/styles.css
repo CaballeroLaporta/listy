@@ -41,10 +41,15 @@ body {
   overflow-y:hidden;
 }
 
+.text-homepage {
+  padding-top: 40px;
+}
+
 #title {
   font-size: 4em;
   font-weight: bolder;
   margin-bottom: 280px;
+  padding-top: 60px;
 }
 
 .monster {
@@ -57,7 +62,7 @@ body {
   overflow-y: hidden;
 }
 
-h2 { 
+.slogan { 
   margin:0;
   padding-bottom: 10px;
 }
@@ -74,7 +79,7 @@ h2 {
   width: 70%;
   margin: 3px;
   color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 1.2em;
   text-decoration: none;
   overflow-y:hidden;
@@ -103,15 +108,14 @@ h1 {
   padding: 12px 15px;
   width: 70%;
   margin: 5px;
-  color: rgb(139, 71, 73);
+  color:rgb(139, 71, 73);
   border-radius: 15px;
   font-size: 1.2em;
   overflow-y:hidden;
 }
 
 .signup-link {
-  color : rgb(175, 88, 91);
-  margin-left: 5px;
+  color : rgb(139, 71, 73);
 }
 
 .monster-login {
@@ -153,6 +157,12 @@ h1 {
 
 /* create component */
 
+
+.create-task {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
 .field-create{
   display: flex;
   width: 90%;
@@ -163,13 +173,16 @@ h1 {
 }
 
 .size-task {
-  padding: 12px 15px;
-  width: 60%;
+  padding: 2px 15px;
+  background-color: #8b4749;
+  width: 65%;
+  height: 60px;
   margin: 5px;
-  color: rgb(139, 71, 73);
+  color: #fff;
   border-radius: 15px;
-  font-size: 1.2em;
-  overflow-y:hidden;
+  font-size: 2em;
+  text-decoration: none;
+  overflow-y: hidden
 }
 
 .btn-task {
@@ -199,6 +212,7 @@ text-align:left;
 border-radius: 15px;
 width: 90%;
 overflow-y:hidden;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
 
 }
@@ -218,7 +232,7 @@ overflow-y:hidden;
 }
 
 .icon-edit {
-  padding-top: 7px;
+  padding-top: 13px;
   display: inline-block;
   color:white;
 }
@@ -235,12 +249,13 @@ overflow-y:hidden;
 
 .monster-mytask {
   position: absolute;
-  top: +200px;
-  left: -62px;
+  top: 60px;
+  left: 120px;
   width: auto;
-  height: 500px;
+  height: 150px;
   z-index: -1;
   overflow-y:hidden;
+  
 }
 
 /* modify component */
