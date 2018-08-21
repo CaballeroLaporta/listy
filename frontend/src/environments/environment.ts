@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseURL: 'http://localhost:3000/'
+  baseURL: 'https://taskywebapp.herokuapp.com/'
 };
 
 /*
@@ -14,3 +14,4 @@ export const environment = {
  * because it will have performance impact when throw error
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+  
