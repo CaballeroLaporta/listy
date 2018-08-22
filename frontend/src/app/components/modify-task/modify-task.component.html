@@ -3,13 +3,12 @@
     <div>
       <h2 class="edit-task">Edit task</h2>
     </div>
- {{task._id}}
     <form class =" form-fields" (ngSubmit)="submitForm(form,task._id)" #form="ngForm">
     
       <div class="field margin">
         <div class="inputs">
           <div class="input-size"> 
-            <input class= "size" type="text" name="name" placeholder="{{task.name}}" [(ngModel)]="task.name" required />
+            <input class= "size" type="text" name="name" placeholder=" task name" [(ngModel)]="task.name" required />
           </div>
           <div>
             <input class= "size" type="description" name="description" placeholder="task description (optional)" [(ngModel)]="description" />
