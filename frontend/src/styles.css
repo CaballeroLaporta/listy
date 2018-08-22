@@ -49,12 +49,12 @@ input {
 
 .monster {
   position: absolute;
-  top: 110px;
-  left: 1px;
-  width: auto;
-  height: 375px;
+  top: 140px;
+  left: 50%;
+  margin-left: -175px;
+  width: 350px;
   z-index: -1;
-  overflow-y: hidden;
+  overflow-y: hidden
 }
 
 .slogan { 
@@ -291,6 +291,18 @@ h1 {
 } 
 
 
+@media(min-width: 380px) and (max-width: 800px) {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  width: auto;
+  height: 400px;
+  z-index: -1;
+  overflow-y: hidden;
+
+}
+
+
 @media (min-width: 800px) {
 
 /* home page */
@@ -303,9 +315,9 @@ h1 {
 .monster {
   position: absolute;
   top: 130px;
-  left: 440px;
-  width: auto;
-  height: 400px;
+  left: 50%
+  width: 350px;
+  margin-left: -175px;  
   z-index: -1;
   overflow-y: hidden;
 }
