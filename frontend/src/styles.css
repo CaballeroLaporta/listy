@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-} */
 
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -21,6 +20,10 @@ body {
 button {
   border:none;
   outline: none;
+}
+
+input {
+  border:none;
 }
 
 /* Home page */
@@ -288,5 +291,26 @@ h1 {
 } 
 
 
+@media (min-width: 800px) {
+
+/* home page */
+
+.form-fields {
+  width: 60%;
+  margin: 0 auto; 
+}
+
+.monster {
+  position: absolute;
+  top: 450px;
+  left: 400px;
+  width: auto;
+  height: 400px;
+  z-index: -1;
+  overflow-y: hidden
+}
+
+
+}
 
 
