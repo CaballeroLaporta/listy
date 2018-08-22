@@ -292,39 +292,71 @@ h1 {
 
 
 @media(min-width: 380px) and (max-width: 800px) {
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  width: 350px;
-  margin-left: -175px;  
-  z-index: -1;
-  overflow-y: hidden;
+  
+  .btn {
 
-}
+  }
+  /* home page */
 
 
-@media (min-width: 800px) {
+  .monster {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    width: 350px;
+    margin-left: -175px;  
+    z-index: -1;
+    overflow-y: hidden;
+  }
 
-/* home page */
+  .btns {
+    width: 60%;
+    margin: 0 auto;
+  }
 
-.form-fields {
-  width: 60%;
-  margin: 0 auto; 
-}
+  .form-fields {
+    margin-bottom: 40px;
+  }
 
-.monster {
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  width: 350px;
-  margin-left: -175px;  
-  z-index: -1;
-  overflow-y: hidden;
-}
-.btns {
-  width: 40%;
-  margin: 0 auto
-}
+  .task-size {
+    width: 70%;
+  }
+
+  .btn {
+    width: 40%;
+  }
+
+
+
+  @media (min-width: 800px) {
+
+    /* home page */
+
+
+  .monster {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    width: 350px;
+    margin-left: -175px;  
+    z-index: -1;
+    overflow-y: hidden;
+  }
+  .btns {
+    width: 40%;
+    margin: 0 auto
+  }
+
+  .form-fields {
+    margin-bottom: 60px;
+  }
+
+  .task-size {
+    width: 70%;
+  }
+  .btn {
+    width: 40%;
+  }
 
 }
 
