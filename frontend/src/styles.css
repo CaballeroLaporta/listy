@@ -302,14 +302,17 @@ h1 {
 
 .monster {
   position: absolute;
-  top: 450px;
-  left: 400px;
+  top: 130px;
+  left: 440px;
   width: auto;
   height: 400px;
   z-index: -1;
-  overflow-y: hidden
+  overflow-y: hidden;
 }
-
+.btns {
+  width: 40%;
+  margin: 0 auto
+}
 
 }
 
