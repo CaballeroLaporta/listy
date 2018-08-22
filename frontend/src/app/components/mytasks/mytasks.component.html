@@ -8,7 +8,7 @@
         <h2 class="name">{{task.name}}</h2>
         <a [routerLink]="['/task-edit', task._id]"><i class="fas fa-pencil-alt fa-lg icon-edit"></i>
         </a>
-        <button (click)="deleteOne(task._id)"> <i class="fas fa-trash fa-2x icon-trash"></i></button>
+        <button class="icon-trash" (click)="deleteOne(task._id)"> <i class="fas fa-trash fa-2x  "></i></button>
       </div>
       <div class="flex-container">
         <h4 class="optionals-fields">{{task.description}}</h4>
