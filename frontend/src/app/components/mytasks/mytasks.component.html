@@ -6,7 +6,7 @@
     <div class= "task-size">
       <div class="task-content" >
         <h2 class="name">{{task.name}}</h2>
-        <a [routerLink]="['/task-edit', task._id]"><i class="fas fa-pencil-alt icon-edit"></i>
+        <a [routerLink]="['/task-edit', task._id]"><i class="fas fa-pencil-alt fa-lg icon-edit"></i>
         </a>
         <button (click)="deleteOne(task._id)"> <i class="fas fa-trash fa-2x icon-trash"></i></button>
       </div>

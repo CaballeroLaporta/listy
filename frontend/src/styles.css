@@ -163,6 +163,10 @@ h1 {
   margin-bottom: 0px;
 }
 
+.form-field {
+  margin-bottom: 10px;
+}
+
 .field-create{
   display: flex;
   width: 90%;
@@ -175,8 +179,8 @@ h1 {
 .size-task {
   padding: 2px 15px;
   width: 62%;
-  height: 60px;
-  color: #fff;
+  height: 40px;
+  color: rgb(139, 71, 73);;
   border-radius: 15px;
   font-size: 1.3em;
   text-decoration: none;
@@ -184,9 +188,8 @@ h1 {
 }
 
 .btn-task {
-  padding: 9px 15px;
+  padding: 6px 15px;
   background-color: rgb(139, 71, 73);
-  width: 20%;
   height: 50px;
   margin: 5px;
   color: white;
@@ -210,7 +213,7 @@ text-align:left;
 border-radius: 15px;
 width: 90%;
 overflow-y:hidden;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 
 
 }
@@ -220,6 +223,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   flex-direction: row;
   justify-content: space-between;
   overflow-y:hidden;
+  padding-top: 5px;
 }
 
 .name {
