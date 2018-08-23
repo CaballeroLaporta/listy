@@ -27,7 +27,6 @@ input {
 }
 
 /* Home page */
-
 .homepage {
   display: flex;
   flex-direction: column;
@@ -82,7 +81,6 @@ input {
 }
 
 /* login component */
-
 h1 {
   display: flex;
   justify-content: center;
@@ -125,8 +123,6 @@ h1 {
 }
 
 /* signup component */
-
-
 .signup {
   padding-top: 200px;
   text-align: center;
@@ -152,8 +148,6 @@ h1 {
 }
 
 /* create component */
-
-
 .create-task {
   padding-top: 100px;
   padding-bottom: 5px;
@@ -196,7 +190,6 @@ h1 {
 }
 
 /* mytask component */
-
 .task-card {
   display: flex;
   justify-content: center;
@@ -254,7 +247,6 @@ h1 {
   height: 150px;
   z-index: -1;
   overflow-y:hidden;
-
 }
 
 /* modify component */
@@ -273,7 +265,6 @@ h1 {
 }
 
 /* app component */
-
 .user {
   background-color:  rgb(139, 71, 73);
   color: white;
@@ -292,12 +283,7 @@ h1 {
 
 
 @media(min-width: 380px) and (max-width: 800px) {
-  
-  .btn {
-
-  }
   /* home page */
-
 
   .monster {
     position: absolute;
@@ -326,23 +312,11 @@ h1 {
     width: 40%;
   }
 
-
+}
 
   @media (min-width: 800px) {
 
     /* home page */
-
-
-  .monster {
-    position: absolute;
-    top: 130px;
-    left: 50%;
-    width: 350px;
-    margin-left: -175px;  
-    z-index: -1;
-    overflow-y: hidden;
-  }
-  
   .btns {
     width: 40%;
     margin: 0 auto
@@ -354,9 +328,6 @@ h1 {
 
   .task-size {
     width: 70%;
-  }
-  .btn {
-    width: 40%;
   }
 
 }

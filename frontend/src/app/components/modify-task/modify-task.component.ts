@@ -35,14 +35,14 @@ export class ModifyTaskComponent implements OnInit {
     }
 
   submitForm(form, id) {
-    console.log(id);
+    // console.log(id);
     const data = {
       name: this.task.name,
       description: this.description,
       dueDate: this.duedate 
     }
 
-    console.log(id, data)
+    // console.log(id, data)
 
     this.mytasksListService.updateOne(this.taskId, data)
       .then(note => {
